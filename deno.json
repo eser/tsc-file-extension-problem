@@ -1,0 +1,46 @@
+{
+  "lint": {
+    "files": {
+      "include": [
+        "src/"
+      ],
+      "exclude": [
+        "dist/"
+      ]
+    },
+    "rules": {
+      "tags": [
+        "recommended"
+      ],
+      "include": [
+        "ban-untagged-todo"
+      ],
+      "exclude": [
+        "import-prefix-missing"
+      ]
+    }
+  },
+  "fmt": {
+    "files": {
+      "include": [
+        "src/"
+      ],
+      "exclude": [
+        "dist/"
+      ]
+    }
+  },
+  "test": {
+    "files": {
+      "include": [
+        "src/"
+      ],
+      "exclude": [
+        "dist/"
+      ]
+    }
+  },
+  "tasks": {
+    "start": "deno run -A src/index.ts"
+  }
+}

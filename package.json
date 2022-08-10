@@ -1,0 +1,20 @@
+{
+  "name": "ts-code-sharing-mark-2",
+  "version": "0.0.1",
+  "description": "",
+  "main": "dist/index.js",
+  "type": "module",
+  "scripts": {
+    "start": "npm run esbuild && node dist/index.js",
+    "tsbuild": "tsc --build",
+    "esbuild": "esbuild ./src/index.ts --bundle --platform=node --target=node16 --external:./node_modules/* --outfile=dist/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cleanup": "rm -rf dist/"
+  },
+  "author": "Eser Ozvataf <eser@ozvataf.com>",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "typescript": "^4.7.4",
+    "esbuild": "^0.15.0"
+  }
+}
