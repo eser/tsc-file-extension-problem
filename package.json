@@ -7,7 +7,7 @@
   "scripts": {
     "start": "npm run esbuild && node dist/index.js",
     "tsbuild": "tsc --build",
-    "esbuild": "esbuild ./src/index.ts --bundle --platform=node --target=node16 --external:./node_modules/* --outfile=dist/index.js",
+    "esbuild": "esbuild ./src/index.ts --bundle --platform=node --target=node16 --external:./node_modules/* --outdir=dist/",
     "test": "echo \"Error: no test specified\" && exit 1",
     "cleanup": "rm -rf dist/"
   },
